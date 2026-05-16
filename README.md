@@ -4,30 +4,30 @@ Centralized application configuration for environment-specific database settings
 
 ## Files
 
-| File | Purpose |
-| --- | --- |
-| `cloud-config.properties` | Default configuration used when no profile-specific file overrides it. |
-| `cloud-config-dev.properties` | Development environment configuration. |
-| `cloud-config-qa.properties` | QA environment configuration. |
-| `cloud-config-prod.properties` | Production environment configuration. |
+| File                           | Purpose                                                                |
+| ------------------------------ | ---------------------------------------------------------------------- |
+| `cloud-config.properties`      | Default configuration used when no profile-specific file overrides it. |
+| `cloud-config-dev.properties`  | Development environment configuration.                                 |
+| `cloud-config-qa.properties`   | QA environment configuration.                                          |
+| `cloud-config-prod.properties` | Production environment configuration.                                  |
 
 ## Properties
 
 Each configuration file defines the same MongoDB-related keys:
 
-| Property | Description |
-| --- | --- |
+| Property     | Description                            |
+| ------------ | -------------------------------------- |
 | `jsp.dbName` | Database name used by the application. |
-| `jsp.dbURI` | MongoDB connection URI. |
+| `jsp.dbURI`  | MongoDB connection URI.                |
 
 ## Current Values
 
-| Environment | Database Name | Database URI |
-| --- | --- | --- |
-| Default | `default_db_name` | `default_db_uri` |
-| Dev | `video-platform-db` | `mongodb://localhost:27017/video-platform-db` |
-| QA | `db_name` | `mdb_uri` |
-| Prod | `db_name` | `db_uri` |
+| Environment | Database Name       | Database URI                                  |
+| ----------- | ------------------- | --------------------------------------------- |
+| Default     | `default_db_name`   | `default_db_uri`                              |
+| Dev         | `video-platform-db` | `mongodb://localhost:27017/video-platform-db` |
+| QA          | `db_name`           | `db_uri`                                      |
+| Prod        | `db_name`           | `db_uri`                                      |
 
 ## Updating Configuration
 
